@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'the-search-continues',
+    modulePrefix: 'search-continues',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
