@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'search-continues',
+    modulePrefix: 'the-search-continues',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -40,9 +40,9 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.locationType = 'hash';
-    ENV.rootURL = '/search-continues/';
+    ENV.rootURL = '/the-search-continues/';
     ENV.locationType = 'hash';
-    ENV.rootURL = '/search-continues/';
+    ENV.rootURL = '/the-search-continues/';
 
   }
 
