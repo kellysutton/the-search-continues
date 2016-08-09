@@ -19,6 +19,9 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
+  app.import(app.bowerDirectory + '/md5/build/md5.min.js');
+  app.import(app.bowerDirectory + '/js-base64/base64.js');
+  app.import(app.bowerDirectory + '/imgix-core-js/dist/imgix-core-js.js');
 
   return app.toTree();
 };

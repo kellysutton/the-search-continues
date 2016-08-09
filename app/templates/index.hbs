@@ -1,0 +1,29 @@
+
+<div class="container">
+  <div class="inner-container">
+    <h1>The Search Continues</h1>
+  </div>
+
+  <img src="{{imageUrl}}" width="700" height="612" style="width: 700px; height: 612px;" />
+  <br />
+
+  <div class="inner-container">
+    {{input key-up=(action 'inputChanged') placeholder="I'm not racist but I mean—"}}
+
+    <br />
+    <p>
+    <strong>Share the link!</strong>
+    </p>
+
+    {{textarea
+      value=linkUrl
+      focus-in=(action 'textareaClicked')
+      placeholder="Type something above to generate a shareable link here"
+      readonly=true
+    }}
+
+    <p>
+      A mash-up by <a href="http://kellysutton.com">Kelly Sutton</a>. Original artwork by <a href="http://poorlydrawnlines.com/">Poorly Drawn Lines</a>.
+    </p>
+  </div>
+</div>
