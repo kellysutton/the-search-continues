@@ -6,6 +6,8 @@ const { computed } = Ember;
 /* global ImgixClient */
 
 export default Ember.Controller.extend({
+  queryParams: ['phrase'],
+
   phrase: null,
 
   imageUrl: computed('phrase', function() {
@@ -14,8 +16,7 @@ export default Ember.Controller.extend({
     if (this.get('phrase')) {
       opts = {
         mark64: this.get('_client').buildURL("/~text", {
-          txt64: this.get('phrase'),
-          txtfont: "",
+          txt64: this.get('phrase').toUpperCase(),
           txtsize: 16,
           bg: "fff",
           w: 162,
@@ -35,7 +36,7 @@ export default Ember.Controller.extend({
 
   _debouncedSetPhrase: computed(function() {
     return _.debounce((newValue) => {
-      this.set('phrase', newValue)
+      this.set('phrase', newValue);
     }, 500);
   }),
 
