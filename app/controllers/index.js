@@ -16,7 +16,7 @@ export default Ember.Controller.extend({
     if (this.get('phrase')) {
       opts = {
         mark64: this.get('_client').buildURL("/~text", {
-          txt64: this.get('phrase').toUpperCase(),
+          txt64: this.get('phrase'),
           txtsize: 16,
           bg: "fff",
           w: 162,
