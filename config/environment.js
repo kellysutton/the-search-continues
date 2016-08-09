@@ -41,6 +41,8 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.locationType = 'hash';
     ENV.rootURL = '/search-continues/';
+    ENV.locationType = 'hash';
+    ENV.rootURL = '/search-continues/';
 
   }
 
